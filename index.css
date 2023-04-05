@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+	--bg: #eee;
+}
+body, html
+{
+	background-color: var(--bg);
+	margin: 0;
+	padding: 0;
+	font-family: 'Barlow';
+}
+
+#main-nav
+{
+	font-weight: 100;
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid lightgray;
+}
+#main-nav > div{
+	width: 90%;
+}
+#main-nav h1
+{
+	font-weight: 800;
+}
+
+
+#main-view
+{
+	text-align: left;
+	width: 95%;
+	max-width: 1000px;
+	padding: 50px 0px;
+}
+
+#bf-array
+{
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+	table-layout: fixed;
+	margin-bottom: 40px
+}
+#bf-array tr:first-of-type td
+{
+	font-size: 20px;
+	padding: 10px 0px;
+	border: 1px solid black;
+	transition: 0.1s;
+}
+#bf-array tr:last-of-type td{
+	color: #222;
+	font-size: 15px;
+	padding: 10px 0px;
+}
+#bf-array td.selected
+{
+	background-color: #222;
+	color: white;
+}
+
+#options
+{
+	width: 100%;
+	display: flex;
+}
+
+.reg-button
+{
+	white-space: nowrap;
+	background-color: #d7d7d7;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	font-family: 'Barlow';
+	margin: 10px 0px;
+	font-size: 15px;
+	transition: 0.2s;
+	margin-right: 10px;
+}
+.reg-button:hover:not(:disabled){
+	background-color: #cacaca;
+	cursor: pointer;
+}
+
+.slider
+{
+	display: inline-block;
+}
+.slider input
+{
+	appearance: none;
+	height: 2px;
+	background-color: black;
+	outline: none;
+}
+.slider input
+{
+	background-color: #999;
+	height: 2px;
+}
+.slider input::-webkit-slider-thumb
+{
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--bg);
+	box-shadow: 0px 0px 15px #0005;
+}
+
+#delay
+{
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	align-items: center;
+}
+#delay span
+{
+	margin-bottom: 5px;
+	margin-right: 20px;
+}
+
+#output div
+{
+	background-color: white;
+	color: black;
+	padding: 0px 20px;
+	padding-bottom: 2px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+}
+
+#output.error div, #output div.error
+{
+	background-color: #f99;
+}
+#editor
+{
+	width: 100%;
+	height: 300px;
+	border: 3px solid #000;
+	font-size: 15px;
+}
