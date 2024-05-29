@@ -18,8 +18,6 @@ This project is a BrainF interpreter that utilizes Vue.js to provide a visual si
 - **Speed Adjustment**: Control the pace of execution with a slider, making it easier to observe how each command manipulates the memory array.
 
 ## Example Program - Print "Hello World"
-  >+++++++++[<++++++++>-]<.>+++++++[<++++>-]<+.+++++++..+++.[-]
->++++++++[<++++>-] <.>+++++++++++[<++++++++>-]<-.--------.+++
-.------.--------.[-]>++++++++[<++++>- ]<+.[-]++++++++++.
+```>+++++++++[<++++++++>-]<.>+++++++[<++++>-]<+.+++++++..+++.[-]>++++++++[<++++>-] <.>+++++++++++[<++++++++>-]<-.--------.+++.------.--------.[-]>++++++++[<++++>- ]<+.[-]++++++++++.```
 
 This interpreter is designed for both newcomers to BrainF looking to understand how it works and advanced users needing a tool for debugging and optimizing their BrainF code.
